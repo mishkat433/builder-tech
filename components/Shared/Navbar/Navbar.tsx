@@ -17,8 +17,8 @@ const Navbar = () => {
                 </button>
                 <div className={` overflow-hidden  absolute top-8 -left-4 rounded-md  bg-white drop-shadow-md`}>
                     <ul className={`${categoryOption ? 'max-h-[370px] duration-300' : "max-h-0"} group-hover:max-h-[370px] space-y-2 min-w-40 duration-300`}>
-                        <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/">CPU / Processor</Link></li>
-                        <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/">Motherboard</Link></li>
+                        <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/category/Processor">CPU / Processor</Link></li>
+                        <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/category/Motherboard">Motherboard</Link></li>
                         <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/">RAM</Link></li>
                         <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/">Power Supply Un</Link></li>
                         <li className="hover:bg-primary duration-300 cursor-pointer p-2 text-black hover:text-fourth" onClick={() => setCategoryOption(false)}><Link href="/">Storage Device</Link></li>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </>
 
     return (
-        <div className="bg-secondary text-white ">
+        <div className="bg-secondary text-white sticky top-0 z-50">
             <div className="container mx-auto navbar">
                 <div className="navbar-start ">
                     <div className="dropdown">
@@ -53,7 +53,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link href="/buildPC" className="btn">PC Builder</Link>
+                    <Link href="/pc-build" className="btn">PC Builder</Link>
                 </div>
             </div>
         </div>

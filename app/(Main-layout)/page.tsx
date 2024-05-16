@@ -1,12 +1,19 @@
-import ProductCard from "@/components/Home/Products/ProductCard";
+import Products from "@/components/Home/Products/Products";
 
 
 export default function Home() {
+
   return (
     <main className="font-mulish bg-fourth">
-      <div className="p-8 container mx-auto">
-        <ProductCard />
-      </div>
+
+      {/* product section start */}
+
+      <section className="p-8 ">
+        <Products />
+      </section>
+
+      {/* product section end */}
     </main>
   );
 }
+
